@@ -1,12 +1,16 @@
 import React from 'react';
-import NavBar from './widgets/NavBar';
-import Welcome from './widgets/Welcome';
+import About from './components/About';
+import NavBar from './components/NavBar';
+import Skills from './components/Skills';
+import Welcome from './components/Welcome';
 
 const App: React.FC = () => {
   return (
     <div className="uk-container">
-      <NavBar/>
-      <Welcome/>
+      <NavBar />
+      <Welcome />
+      <About />
+      <Skills />
     </div>
   );
 }

@@ -19,6 +19,8 @@ html {
   /* 3 */
   background: #090909;
   color: #fff;
+  
+  cursor: url(../cursor.cur)4 12, auto;
 }
 
 .uk-text-white{
@@ -30,7 +32,14 @@ html {
  */
 body {
   margin: 0;
-  cursor: url(../cursor.cur)4 12, auto;
+}
+.uk-bg-purple{
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  left: 13%;
+  top: 10px;
+  background-color: #550FEA;
 }
 /* Links
  ========================================================================== */
@@ -54,8 +63,9 @@ a:hover,
 .uk-link:hover,
 .uk-link-toggle:hover .uk-link,
 .uk-link-toggle:focus .uk-link {
-  color: #2AE58C;
+  /* color: #2AE58C; */
   text-decoration: underline;
+  text-decoration-color: #2AE58C;
 }
 /* Text-level semantics
  ========================================================================== */
@@ -307,6 +317,13 @@ h6,
 .uk-h6 {
   font-size: 0.875rem;
   line-height: 1.4;
+}
+@media (min-width: 640px) {
+  h1,
+  .uk-h1 {
+    font-size: 2.625rem;
+    line-height: 1.2;
+  }
 }
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
@@ -1208,7 +1225,7 @@ button.uk-icon:not(:disabled) {
   width: 36px;
   height: 36px;
   border-radius: 500px;
-  background: #f8f8f8;
+  background: #1d1d1d;
   color: #999;
   vertical-align: middle;
   /* 1 */
@@ -4061,7 +4078,7 @@ select.uk-form-width-xsmall {
  * 1. Hide by default
  * 2. Set position
  */
-.uk-offcanvas {
+ .uk-offcanvas {
   /* 1 */
   display: none;
   /* 2 */
@@ -4072,8 +4089,8 @@ select.uk-form-width-xsmall {
   z-index: 1000;
 }
 /*
- * Flip modifier
- */
+* Flip modifier
+*/
 .uk-offcanvas-flip .uk-offcanvas {
   right: 0;
   left: auto;
@@ -5495,7 +5512,7 @@ ul.uk-nav-sub {
   /* 1 */
   flex-wrap: wrap;
   /* 2 */
-  margin-left: -20px;
+  margin-left: -10px;
   /* 3 */
   padding: 0;
   list-style: none;
@@ -5509,7 +5526,7 @@ ul.uk-nav-sub {
   /* 1 */
   flex: none;
   /* 2 */
-  padding-left: 20px;
+  padding-left: 10px;
   /* 3 */
   position: relative;
 }
@@ -5582,13 +5599,13 @@ ul.uk-nav-sub {
 /* Hover + Focus */
 .uk-subnav-pill > * > a:hover,
 .uk-subnav-pill > * > a:focus {
-  background-color: #f8f8f8;
-  color: #666;
+  background-color: #1d1d1d;
+  color: #fff;
 }
 /* OnClick */
 .uk-subnav-pill > * > a:active {
-  background-color: #f8f8f8;
-  color: #666;
+  background-color: #550FEA;
+  color: #fff;
 }
 /* Active */
 .uk-subnav-pill > .uk-active > a {
@@ -7184,9 +7201,8 @@ ul.uk-nav-sub {
 /* Style modifiers
  ========================================================================== */
 .uk-text-lead {
-  font-size: 1.5rem;
+  font-size: 5.5rem;
   line-height: 1.5;
-  color: #333;
 }
 .uk-text-meta {
   font-size: 0.875rem;
@@ -7200,10 +7216,32 @@ ul.uk-nav-sub {
   color: #666;
   text-decoration: none;
 }
+
+@media (min-width: 200px) {
+  .uk-text-lead {
+    font-size: 3.5rem;
+  }
+}
+/* Phone landscape and bigger */
+@media (min-width: 640px) {
+  .uk-text-lead {
+    font-size: 4.5rem;
+  }
+}
+/* Tablet landscape and bigger */
+@media (min-width: 960px) {
+  .uk-text-lead {
+    font-size: 5.5rem;
+  }
+}
 /* Size modifiers
  ========================================================================== */
 .uk-text-small {
   font-size: 0.875rem;
+  line-height: 1.5;
+}
+.uk-text-xlarge {
+  font-size: 3.5rem;
   line-height: 1.5;
 }
 .uk-text-large {
