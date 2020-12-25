@@ -5,8 +5,7 @@ const Skills: React.FC = () => {
     return (
         <div className="uk-container uk-section">
             <div className="uk-text-xlarge uk-text-center uk-text-bold">
-                Habilidades
-            </div>
+                Habilidades</div>
 
             <div className="uk-margin-large-top">
                 <div className="uk-flex uk-flex-center uk-flex-middle uk-flex-column">

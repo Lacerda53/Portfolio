@@ -1,5 +1,7 @@
 import React from 'react';
 import About from './components/About';
+import Contact from './components/Contact';
+import Experience from './components/Experience';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import Skills from './components/Skills';
@@ -12,6 +14,8 @@ const App: React.FC = () => {
       <Welcome />
       <About />
       <Skills />
+      <Experience />
+      <Contact />
       <Footer />
     </div>
   );
