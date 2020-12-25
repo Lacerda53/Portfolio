@@ -17,21 +17,29 @@ const Skills: React.FC = () => {
                         <li><a href="#">Outros</a></li>
                     </ul>
 
-                    <div className="uk-switcher uk-margin">
+                    <div className="uk-switcher uk-margin uk-flex uk-flex-center uk-flex-middle uk-flex-column">
                         <div className="uk-grid uk-grid-small uk-child-width-1-2">{todos.map((e) => (
-                            <div className="uk-width-1-6 uk-margin-small-bottom">
+                            <div key={e.skill} className="uk-width-1-6 uk-margin-small-bottom">
                                 <img src={e.skill} alt="" />
                             </div>
                         ))}
                         </div>
+
                         <div className="uk-grid uk-grid-small uk-child-width-1-2">{frontend.map((e) => (
-                            <div className="uk-width-1-6">
+                            <div key={e.skill} className="uk-width-1-6">
+                                <img src={e.skill} alt="" />
+                            </div>
+                        ))}
+                        </div>
+
+                        <div className="uk-grid uk-grid-small uk-child-width-1-2">{backend.map((e) => (
+                            <div key={e.skill} className="uk-width-1-6">
                                 <img src={e.skill} alt="" />
                             </div>
                         ))}
                         </div>
                         <div className="uk-grid uk-grid-small uk-child-width-1-2">{backend.map((e) => (
-                            <div className="uk-width-1-6">
+                            <div key={e.skill} className="uk-width-1-6">
                                 <img src={e.skill} alt="" />
                             </div>
                         ))}
