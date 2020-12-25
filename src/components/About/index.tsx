@@ -18,7 +18,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="uk-width-expand uk-margin uk-text-left@m uk-first-column">
                     <h5 className="uk-text-muted uk-margin-remove" uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true">
-                        Olá, me chamo Guilherme Andrade Lacerda, desenvolvedor fullstack, acadêmico de Sistemas de Informação, cursando o 7º período. Atualmente trabalho como Auxiliar Administrativo de TI no UNITPAC - Centro Universitário Tocantinense Presidente Antônio Carlos.
+                        Olá, me chamo Guilherme Andrade Lacerda, sou desenvolvedor fullstack, acadêmico de Sistemas de Informação, cursando o 7º período. Atualmente trabalho como Auxiliar Administrativo de TI no UNITPAC - Centro Universitário Tocantinense Presidente Antônio Carlos.
                         </h5>
                     <br />
                     <h5 className="uk-text-muted uk-margin-remove" uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true">
