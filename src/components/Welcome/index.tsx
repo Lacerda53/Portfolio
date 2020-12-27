@@ -12,9 +12,9 @@ const Welcome: React.FC = () => {
                 </div>
                 <div className="uk-text-left uk-margin-large-top">
                     <div className="uk-text-bold uk-text-lead uk-margin-remove" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true">
-                        <a href="" className="uk-text-white">
+                        <div className="uk-text-white">
                             Olá,
-                        </a>
+                        </div>
                     </div>
                     <div className="uk-text-bold uk-text-lead uk-text-primary uk-margin-remove" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true">
                         <a className="content01" href="#about">

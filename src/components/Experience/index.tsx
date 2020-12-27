@@ -28,6 +28,9 @@ const Experience: React.FC = () => {
                         <h4 className="uk-text-dark-gray uk-text-regular uk-margin-remove">NERDS • Estágio Voluntário</h4>
                     </div>
                 </section>
+                <div className="uk-margin-top">
+                    <a href="/document/curriculo.pdf" download="Currículo" className="uk-button uk-button-secondary uk-border-rounded"> <span uk-icon='icon: download' ></span> Baixar currículo</a>
+                </div>
             </div>
         </div>
     );
