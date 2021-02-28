@@ -22,7 +22,7 @@ const About: React.FC = () => {
                     </p>
                     <br />
                     <p className="uk-text-muted uk-margin-remove" uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true">
-                        Sou um pouco curioso, sempre que posso quero aprender coisas novas. Gosto de usar C# em projetos de backend e Javascript (ReactJS) em projetos de frontend, estou sempre buscando aprimorar meus conhecimentos e habilidades, sou dedicado, responsável, paciente, amigável e com ótima comunicação.
+                        Sou um pouco curioso, sempre que posso quero aprender coisas novas. Gosto de usar C# em projetos de backend e Javascript (ReactJS) em projetos de frontend, estou sempre buscando aprimorar meus conhecimentos e habilidades, sou dedicado, responsável, paciente e com boa comunicação em equipe.
                     </p>
                     <br />
                     <p className="uk-text-muted uk-margin-remove" uk-scrollspy="cls: uk-animation-slide-left-small; repeat: true">

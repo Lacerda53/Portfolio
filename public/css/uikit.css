@@ -20,7 +20,36 @@ html {
   background: #090909;
   color: #fff;
   
-  cursor: url(../cursor.cur)4 12, auto;
+  cursor: none !important;
+}
+
+.cursor{
+position: absolute;
+z-index: 99999;
+width: 1px;
+height: 1px;
+overflow: visible;
+pointer-events: none;
+mix-blend-mode: difference;
+transition: opacity .7s cubic-bezier(.5,0,0,1);
+}
+
+.cursor-dot {
+  background-color: #fff;
+  transform-origin: 0 0;
+  transform: scale(.37) translate(-50%,-50%);
+  width: 70px;
+  height: 70px;
+  z-index: -1;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform .5s cubic-bezier(.5,0,0,1),opacity .5s cubic-bezier(.5,0,0,1);
+}
+
+.cursor-dot, .cursor::before {
+  top: 50%;
+  left: 50%;
+  overflow: visible;
 }
 
 .uk-text-white{
@@ -105,7 +134,7 @@ a,
 .uk-link {
   color: #550FEA;
   text-decoration: none;
-  cursor: pointer;
+  cursor: none;
 }
 a:hover,
 .uk-link:hover,
@@ -1208,7 +1237,7 @@ a.uk-link-reset,
 }
 /* Required for `button`. */
 button.uk-icon:not(:disabled) {
-  cursor: pointer;
+  cursor: none;
 }
 /*
  * Remove the inner border and padding in Firefox.
@@ -1340,13 +1369,13 @@ button.uk-icon:not(:disabled) {
  * Improves consistency of cursor style for clickable elements
  */
 .uk-range:not(:disabled)::-webkit-slider-thumb {
-  cursor: pointer;
+  cursor: none;
 }
 .uk-range:not(:disabled)::-moz-range-thumb {
-  cursor: pointer;
+  cursor: none;
 }
 .uk-range:not(:disabled)::-ms-thumb {
-  cursor: pointer;
+  cursor: none;
 }
 /* Thumb
  ========================================================================== */
@@ -1514,7 +1543,7 @@ button.uk-icon:not(:disabled) {
  */
 .uk-radio:not(:disabled),
 .uk-checkbox:not(:disabled) {
-  cursor: pointer;
+  cursor: none;
 }
 /*
  * Define consistent border, margin, and padding.
@@ -1896,7 +1925,7 @@ select.uk-form-width-xsmall {
   -webkit-appearance: none;
   /* 4 */
   opacity: 0;
-  cursor: pointer;
+  cursor: none;
 }
 .uk-form-custom input[type="file"] {
   /* 5 */
@@ -2044,7 +2073,7 @@ select.uk-form-width-xsmall {
   transition-property: color, background-color, border-color;
 }
 .uk-button:not(:disabled) {
-  cursor: pointer;
+  cursor: none;
 }
 /*
  * Remove the inner border and padding in Firefox.
@@ -4451,7 +4480,7 @@ select.uk-form-width-xsmall {
   color: #666;
   font-size: 1.25rem;
   line-height: 1.4;
-  cursor: pointer;
+  cursor: none;
 }
 * + .uk-notification-message {
   margin-top: 10px;

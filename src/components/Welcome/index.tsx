@@ -7,7 +7,7 @@ const Welcome: React.FC = () => {
             <div className="uk-flex uk-flex-around uk-grid" uk-grid="">
                 <div className="uk-flex uk-flex-center uk-flex-middle uk-width-1-2 uk-width-1-2@s uk-flex-last@m">
                     <div uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
-                        <img data-src={image} src={image}></img>
+                        <img data-src={image} src={image} width="100%" />
                     </div>
                 </div>
                 <div className="uk-text-left uk-margin-large-top">
